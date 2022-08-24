@@ -28,7 +28,7 @@ public class MarsAgain {
         public static boolean LandingCheck(int Loops) throws InterruptedException
         {
         for (int i=0; i <=Loops; i++)
-            if (((i/3) == 0) && (i/5== 0)) {
+            if (((i%3) == 0) && (i%5== 0)) {
                 System.out.println("Keep Center");
             } else if ((i%5)==0) {
                 System.out.println("Right");
