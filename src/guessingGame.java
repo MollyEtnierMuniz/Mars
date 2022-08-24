@@ -15,7 +15,7 @@ public class guessingGame {
         System.out.println("Try to guess the number!");
         Random rand = new Random();
         int number = rand.nextInt(100);
-//        System.out.println("It's "+number);
+       System.out.println("It's "+number);
 
         while (correctGuess == false) {
             increment++;

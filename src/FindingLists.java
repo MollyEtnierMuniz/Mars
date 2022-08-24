@@ -23,25 +23,30 @@ public class FindingLists {
         Thread.sleep(500);
 
         HashMap<String,String> fossilDirectory = new HashMap<>();
+
         System.out.println("Fossil data downloaded");
         fossilDirectory.put("Bird Fossil", "The fossil has wings implying it was capable of flight");
         fossilDirectory.put("Fish Fossil", "The fossil is vaguely fish shaped implies there was once liquid.");
         fossilDirectory.put("Tooth Fossil", "The tooth from an unknown critter.");
 
         System.out.println("Which of the fossils would you like to learn more about? (Spelling and Spacing is important.)");
+        System.out.println("Type 'Bird Fossil', 'Fish Fossil, or 'Tooth Fossil'.");
 
         Scanner input = new Scanner(System.in);
         String fossilChoice = input.nextLine();
 
-        if (fossilChoice.equalsIgnoreCase("Bird Fossil")){
+        if (fossilChoice.equalsIgnoreCase("Bird Fossil"))
+        {
             System.out.println("Fossil: " + fossilChoice + "\nDescription:" + fossilDirectory.get(fossilChoice));
 
-        } else if (fossilChoice.equalsIgnoreCase("Fish Fossil")){
+        } else if (fossilChoice.equalsIgnoreCase("Fish Fossil"))
+        {
             System.out.println("Fossil: " + fossilChoice + "\nDescription:" + fossilDirectory.get(fossilChoice));
 
         } else if (fossilChoice.equalsIgnoreCase("Tooth Fossil")) {
             System.out.println("Fossil: " + fossilChoice + "\nDescription:" + fossilDirectory.get(fossilChoice));
         }
+
         Thread.sleep(500);
 
         HashSet<String> suppliesBought = new HashSet<>();
@@ -55,7 +60,6 @@ public class FindingLists {
 
         System.out.println("Medicine");
 
-        new FindingLists();
     }
 
 }

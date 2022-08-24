@@ -35,7 +35,7 @@ public class MarsExpedition {
 
         String weapon = input.nextLine();
         System.out.println("Nice choice, you'll have " + weapon + " at your disposal.");
-        System.out.println("You have the choice of 3 vehicles” “nA: A Mars Rover” “nB: A Chevy Silverado” “nC: A Honda Civic”");
+        System.out.println("You have the choice of 3 vehicles” “\nA: A Mars Rover” “\nB: A Chevy Silverado” “\nC: A Honda Civic”");
         String VehicleChoice = input.nextLine();
         if (VehicleChoice.equalsIgnoreCase("A")) {
             VehicleChoice = "a Mars Rover";
